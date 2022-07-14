@@ -1,0 +1,38 @@
+@import "footer.scss";
+@import "index.scss";
+@import "aboutus.scss";
+@import "howtoorder";
+@import "contactus";
+@import "reset.scss";
+@import "colores.scss";
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+
+$colores:(
+    primario:rgb(240, 248, 255),
+    secundario: rgb(255, 255, 255),
+    terciario: rgb(255, 235, 205)
+);
+@each $color , $var in $colores {
+    .btn-#{$color}{
+        @extend .btn;
+        background-color: $var;
+    }
+};
+
+$botones:(
+    fuente:'Lato' sans-serif,
+    padding: 10px 15px,
+    radio:5px
+); 
+@mixin propbtn($margen,$colorLetra) {
+    margin: $margen;
+    color: $colorLetra;
+}
+.btn {
+    font-family: map-get($botones , fuente );
+    padding: map-get($botones , padding );
+    border-radius: map-get($botones , radio ); 
+    @include propbtn(20px,rgb(0, 0, 0) );
+}
+
