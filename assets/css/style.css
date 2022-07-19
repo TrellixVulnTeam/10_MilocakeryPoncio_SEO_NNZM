@@ -30,6 +30,11 @@ footer {
       height: 25px;
       border-radius: 50%; }
 
+.portada1 {
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41); }
+
 .fotos img {
   border-radius: 50%;
   padding: 30px;
