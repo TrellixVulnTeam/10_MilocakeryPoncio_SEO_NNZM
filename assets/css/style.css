@@ -69,6 +69,10 @@ body {
   margin-top: 5px;
   font-size: 20px; }
 
+.aboutus {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif; }
+
 .card {
   display: flex;
   width: 330px;
@@ -82,14 +86,12 @@ body {
   margin: 2px; }
 
 .lista {
-  width: 60%;
+  width: 25%;
   font-size: 20px;
   border: solid blanchedalmond;
   margin: 20px 25px 5px 20px;
   font-family: 'Lato', sans-serif;
-  background-color: white;
-  justify-content: center;
-  align-items: center; }
+  background-color: white; }
 
 .delivery {
   border: solid blanchedalmond;
@@ -98,10 +100,16 @@ body {
   margin-left: 20px;
   font-family: 'Lato', sans-serif;
   background-color: white;
-  width: 60%; }
+  width: 25%; }
 
 .deliveryoptions {
-  font-size: 20px; }
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  flex-direction: column; }
+
+.label {
+  font-size: 18px; }
 
 .acepto {
   margin-top: 10px;

@@ -12,14 +12,12 @@
     margin: 2px;
 }
 .lista{ 
-    width: 60%;
+    width: 25%;
     font-size: 20px;
     border: solid $colorborde;
     margin: 20px 25px 5px 20px;
     font-family: 'Lato', sans-serif;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 .delivery{
     border: solid $colorborde;
@@ -28,8 +26,14 @@
     margin-left: 20px;
     font-family: 'Lato', sans-serif;
     background-color: white;
-    width: 60%;
+    width: 25%;
 }
 .deliveryoptions {
+    display: flex;
     font-size: 20px;
+    padding: 10px;
+    flex-direction: column;
+}
+.label {
+    font-size: 18px;
 }
