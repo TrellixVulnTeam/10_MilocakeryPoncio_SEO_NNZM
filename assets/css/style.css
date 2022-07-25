@@ -121,6 +121,14 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+#galeria {
+  display: flex; }
+  #galeria img {
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%; }
+
 .btn-primario {
   background-color: aliceblue; }
 
