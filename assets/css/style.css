@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 footer {
   height: auto;
   width: 100vw;
@@ -67,18 +68,23 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   margin-top: 5px;
-  font-size: 20px; }
+  font-size: 25px; }
 
 .aboutus {
   font-size: 20px;
   font-family: 'Lato', sans-serif; }
 
-.card {
+#cards {
   display: flex;
-  width: 330px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px; }
+  justify-content: center; }
+  #cards .card {
+    width: 324px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin: 10px; }
+    #cards .card img {
+      padding-top: 14px; }
 
 .tarjetas {
   display: flex;
@@ -110,6 +116,28 @@ body {
 
 .label {
   font-size: 18px; }
+
+.titulos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 45px; }
+  .titulos h1 {
+    font-size: 60px;
+    font-family: 'bebas neue';
+    font-weight: 700;
+    text-transform: uppercase; }
+  .titulos h2 {
+    font-size: 60px;
+    font-family: 'bebas neue';
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.ppp {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; }
 
 .acepto {
   margin-top: 10px;
