@@ -100,12 +100,10 @@ body {
   background-color: white; }
 
 .delivery {
-  border: solid blanchedalmond;
   padding: 10px;
   margin-bottom: 15px;
   margin-left: 20px;
   font-family: 'Lato', sans-serif;
-  background-color: white;
   width: 25%; }
 
 .deliveryoptions {
@@ -138,6 +136,58 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   font-size: 20px; }
+
+.portions {
+  display: flex;
+  margin-left: 30px; }
+  .portions label {
+    color: #000000;
+    font-family: 'bebas neue';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px; }
+  .portions input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 15px;
+    width: 90px;
+    margin-left: 30px; }
+
+.containerbutton {
+  text-align: center; }
+
+.btn, .btn-primario, .btn-secundario, .btn-terciario {
+  border: 2px solid #c44569;
+  background-color: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden; }
+
+.btn1:hover {
+  color: #fff; }
+
+.btn::before, .btn-primario::before, .btn-secundario::before, .btn-terciario::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #c44569;
+  z-index: -1;
+  transition: 0.8s; }
+
+.btn1::before {
+  top: 0;
+  border-radius: 0 0 50% 50%; }
+
+.btn1:hover::before {
+  height: 180%; }
 
 .acepto {
   margin-top: 10px;

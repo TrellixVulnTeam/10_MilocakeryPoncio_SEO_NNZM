@@ -27,12 +27,10 @@
     background-color: rgb(255, 255, 255);
 }
 .delivery{
-    border: solid $colorborde;
     padding: 10px;
     margin-bottom: 15px;
     margin-left: 20px;
     font-family: 'Lato', sans-serif;
-    background-color: white;
     width: 25%;
 }
 .deliveryoptions {
@@ -74,8 +72,59 @@
    
 }
 
+.portions {
+    display: flex;
+    margin-left: 30px;
+    label {
+        color: #000000;
+        font-family: 'bebas neue';
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    input {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5%;
+        padding: 15px;
+        width: 90px;
+        margin-left: 30px;
+    }
+}
 
+.containerbutton {
+    text-align: center;
+}
+.btn {
+    border: 2px solid #c44569;
+    background-color: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1:hover {
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #c44569;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before {
+    height: 180%;
+}
 
-
-  
-  
