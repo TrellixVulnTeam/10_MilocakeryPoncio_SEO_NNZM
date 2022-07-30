@@ -1,6 +1,10 @@
 #cards {
     display: flex;
     justify-content: center;
+    h5 {
+        font-family: 'bebas neue';
+        font-size: 30px;
+    }
     .card {
         width: 324px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -18,27 +22,7 @@
     flex-wrap: wrap;
     margin: 2px;
 }
-.lista{ 
-    width: 25%;
-    font-size: 20px;
-    border: solid $colorborde;
-    margin: 20px 25px 5px 20px;
-    font-family: 'Lato', sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-.delivery{
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    font-family: 'Lato', sans-serif;
-    width: 25%;
-}
-.deliveryoptions {
-    display: flex;
-    font-size: 20px;
-    padding: 10px;
-    flex-direction: column;
-}
+
 .label {
     font-size: 18px;
 }
@@ -61,9 +45,6 @@
         text-transform: uppercase;
     }
 }
-
-
-
 .ppp {
     display: flex;
     justify-content: center;
@@ -71,7 +52,6 @@
     font-size: 20px;
    
 }
-
 .portions {
     display: flex;
     margin-left: 30px;
@@ -127,4 +107,51 @@
 .btn1:hover::before {
     height: 180%;
 }
+.delivery{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.buttons {
+    background: #ffffff;
+    padding: 8px;
+    margin-left: 20px;
+    border-radius: 4px;
+    position: relative;
+    width: fit-content;
+  }
 
+  .buttons input {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 10px;
+    background: #a5b1c2;
+    color: #ececec;
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+    transition: all 0.1s;
+  }
+
+  .buttons input:checked {
+    background: #cf6a87;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0px #808080;
+  }
+
+  .buttons input::before {
+    content: attr(label);
+    text-align: center;
+  }
+
+  .delivery {
+    display: flex;
+    margin-left: 30px;
+    h1 {
+        color: #000000;
+        font-family: 'bebas neue';
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+  }
