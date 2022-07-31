@@ -55,7 +55,10 @@ body {
 .video {
   display: flex;
   justify-content: center;
-  margin: 15px; }
+  margin: 15px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%); }
 
 .home {
   display: flex;
@@ -71,8 +74,22 @@ body {
   font-size: 25px; }
 
 .aboutus {
-  font-size: 20px;
-  font-family: 'Lato', sans-serif; }
+  display: flex;
+  font-size: 19px;
+  font-family: 'Lato', sans-serif;
+  margin-left: 20px; }
+
+.aboutus-title {
+  font-size: 60px;
+  font-family: 'bebas neue';
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px; }
+
+.aboutus-img {
+  margin: 20px; }
 
 #cards {
   display: flex;
@@ -88,6 +105,8 @@ body {
     margin: 10px; }
     #cards .card img {
       padding-top: 14px; }
+    #cards .card label {
+      display: block; }
 
 .tarjetas {
   display: flex;
@@ -118,23 +137,6 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   font-size: 20px; }
-
-.portions {
-  display: flex;
-  margin-left: 30px; }
-  .portions label {
-    color: #000000;
-    font-family: 'bebas neue';
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 20px; }
-  .portions input {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5%;
-    padding: 15px;
-    width: 90px;
-    margin-left: 30px; }
 
 .containerbutton {
   text-align: center; }
@@ -175,25 +177,29 @@ body {
   display: flex;
   align-items: center;
   margin: 20px; }
+  .delivery h1 {
+    color: #000000;
+    font-family: 'bebas neue';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px; }
 
 .buttons {
-  background: #ffffff;
   padding: 8px;
   margin-left: 20px;
   border-radius: 4px;
   position: relative;
   width: fit-content; }
-
-.buttons input {
-  appearance: none;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 10px 10px;
-  background: #a5b1c2;
-  color: #ececec;
-  font-size: 18px;
-  font-family: 'lato', sans-serif;
-  transition: all 0.1s; }
+  .buttons input {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 10px;
+    background: #a5b1c2;
+    color: #ececec;
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+    transition: all 0.1s; }
 
 .buttons input:checked {
   background: #cf6a87;
@@ -203,16 +209,6 @@ body {
 .buttons input::before {
   content: attr(label);
   text-align: center; }
-
-.delivery {
-  display: flex;
-  margin-left: 30px; }
-  .delivery h1 {
-    color: #000000;
-    font-family: 'bebas neue';
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 20px; }
 
 .acepto {
   margin-top: 10px;

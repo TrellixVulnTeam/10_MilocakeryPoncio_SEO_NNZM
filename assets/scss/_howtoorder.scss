@@ -14,6 +14,9 @@
         img {
             padding-top: 14px;
         }
+        label {
+            display: block;
+        }
     }
 }
 
@@ -52,26 +55,6 @@
     font-size: 20px;
    
 }
-.portions {
-    display: flex;
-    margin-left: 30px;
-    label {
-        color: #000000;
-        font-family: 'bebas neue';
-        font-size: 30px;
-        font-weight: bold;
-        margin-left: 20px;
-    }
-    input {
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 5%;
-        padding: 15px;
-        width: 90px;
-        margin-left: 30px;
-    }
-}
-
 .containerbutton {
     text-align: center;
 }
@@ -111,26 +94,31 @@
     display: flex;
     align-items: center;
     margin: 20px;
+    h1 {
+        color: #000000;
+        font-family: 'bebas neue';
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
 }
 .buttons {
-    background: #ffffff;
     padding: 8px;
     margin-left: 20px;
     border-radius: 4px;
     position: relative;
     width: fit-content;
-  }
-
-  .buttons input {
-    appearance: none;
-    cursor: pointer;
-    border-radius: 3px;
-    padding: 10px 10px;
-    background: #a5b1c2;
-    color: #ececec;
-    font-size: 18px;
-    font-family: 'lato', sans-serif;
-    transition: all 0.1s;
+    input {
+        appearance: none;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 10px 10px;
+        background: #a5b1c2;
+        color: #ececec;
+        font-size: 18px;
+        font-family: 'lato', sans-serif;
+        transition: all 0.1s;
+      }
   }
 
   .buttons input:checked {
@@ -144,14 +132,4 @@
     text-align: center;
   }
 
-  .delivery {
-    display: flex;
-    margin-left: 30px;
-    h1 {
-        color: #000000;
-        font-family: 'bebas neue';
-        font-size: 30px;
-        font-weight: bold;
-        margin-left: 20px;
-    }
-  }
+  
