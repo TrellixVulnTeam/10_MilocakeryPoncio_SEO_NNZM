@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 footer {
   height: auto;
   width: 100%;
@@ -54,7 +55,10 @@ body {
 .video {
   display: flex;
   justify-content: center;
-  margin: 15px; }
+  margin: 15px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%); }
 
 .home {
   display: flex;
@@ -67,59 +71,215 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   margin-top: 5px;
-  font-size: 20px; }
+  font-size: 25px; }
 
 .aboutus {
-  font-size: 20px;
-  font-family: 'Lato', sans-serif; }
-
-.card {
   display: flex;
-  width: 330px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-size: 19px;
   font-family: 'Lato', sans-serif;
-  font-size: 18px; }
+  margin-left: 20px; }
+
+.aboutus-title {
+  font-size: 60px;
+  font-family: 'bebas neue';
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px; }
+
+.aboutus-img {
+  margin: 20px; }
+
+#cards {
+  display: flex;
+  justify-content: center; }
+  #cards h5 {
+    font-family: 'bebas neue';
+    font-size: 30px; }
+  #cards .card {
+    width: 324px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin: 10px; }
+    #cards .card img {
+      padding-top: 14px; }
+    #cards .card label {
+      display: block; }
 
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
   margin: 2px; }
 
-.lista {
-  width: 25%;
-  font-size: 20px;
-  border: solid blanchedalmond;
-  margin: 20px 25px 5px 20px;
-  font-family: 'Lato', sans-serif;
-  background-color: white; }
-
-.delivery {
-  border: solid blanchedalmond;
-  padding: 10px;
-  margin-bottom: 15px;
-  margin-left: 20px;
-  font-family: 'Lato', sans-serif;
-  background-color: white;
-  width: 25%; }
-
-.deliveryoptions {
-  display: flex;
-  font-size: 20px;
-  padding: 10px;
-  flex-direction: column; }
-
 .label {
   font-size: 18px; }
 
-.acepto {
-  margin-top: 10px;
+.titulos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 45px; }
+  .titulos h1 {
+    font-size: 60px;
+    font-family: 'bebas neue';
+    font-weight: 700;
+    text-transform: uppercase; }
+  .titulos h2 {
+    font-size: 60px;
+    font-family: 'bebas neue';
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.ppp {
+  display: flex;
+  justify-content: center;
   font-family: 'Lato', sans-serif;
-  margin-left: 5px; }
+  font-size: 20px; }
+
+.containerbutton {
+  text-align: center; }
+
+.btn, .btn-primario, .btn-secundario, .btn-terciario {
+  border: 2px solid #c44569;
+  background-color: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden; }
+
+.btn1:hover {
+  color: #fff; }
+
+.btn::before, .btn-primario::before, .btn-secundario::before, .btn-terciario::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #c44569;
+  z-index: -1;
+  transition: 0.8s; }
+
+.btn1::before {
+  top: 0;
+  border-radius: 0 0 50% 50%; }
+
+.btn1:hover::before {
+  height: 180%; }
+
+.delivery {
+  display: flex;
+  align-items: center;
+  margin: 20px; }
+  .delivery h1 {
+    color: #000000;
+    font-family: 'bebas neue';
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px; }
+
+.buttons {
+  padding: 8px;
+  margin-left: 20px;
+  border-radius: 4px;
+  position: relative;
+  width: fit-content; }
+  .buttons input {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 10px;
+    background: #a5b1c2;
+    color: #ececec;
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+    transition: all 0.1s; }
+
+.buttons input:checked {
+  background: #cf6a87;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0px #808080; }
+
+.buttons input::before {
+  content: attr(label);
+  text-align: center; }
+
+.contact-form-wrapper {
+  padding: 100px 0; }
+
+.contact-form {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px; }
+  .contact-form textarea {
+    resize: none; }
+    .contact-form textarea .form-text-area {
+      background-color: #f0f4f5;
+      height: auto;
+      padding-left: 16px; }
+      .contact-form textarea .form-text-area .form-control::placeholder {
+        color: #aeb4b9;
+        font-weight: 500;
+        opacity: 1; }
+        .contact-form textarea .form-text-area .form-control::placeholder .form-control:-ms-input-placeholder {
+          color: #aeb4b9;
+          font-weight: 500; }
+          .contact-form textarea .form-text-area .form-control::placeholder .form-control:-ms-input-placeholder .form-control:focus {
+            border-color: #c44569;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0; }
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px; }
+
+.contact-form .title {
+  font-family: 'bebas neue';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500; }
+
+.contact-form .description {
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center; }
+
+.contact-form .submit-button-wrapper {
+  text-align: center; }
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  background-color: #c44569;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px; }
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #d30069; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+#galeria {
+  display: flex; }
+  #galeria img {
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%; }
 
 .btn-primario {
   background-color: aliceblue; }
